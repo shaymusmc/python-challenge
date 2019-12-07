@@ -35,7 +35,7 @@ with open(csvpath, newline="") as csvfile:
     	if row[2] not in candidates:
     		candidates.append(row[2])
     	# Collect count of individuals after captured in candidates
-    	elif row[2] == "Khan":
+    	if row[2] == "Khan":
     		khan += 1
     	elif row[2] == "Correy":
     		correy += 1
